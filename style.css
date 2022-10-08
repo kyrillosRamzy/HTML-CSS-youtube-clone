@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* end fonts */
 /* start variables */
+:root {
+}
 /* end variables */
 /* start global rules */
 * {
@@ -10,11 +12,78 @@
   box-sizing: border-box;
 }
 html {
+  scroll-behavior: smooth;
   font-size: 10px;
 }
 body {
   font-family: "Roboto", "Arial", sans-serif;
 }
+a {
+  text-decoration: none;
+}
 /* end global rules */
 /* start components */
 /* end components */
+/* start header */
+header {
+  height: 56px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.left-section img {
+  width: 140px;
+  padding: 18px 14px 18px 16px;
+}
+.middle-section {
+  display: flex;
+  align-items: center;
+  margin-left: -9px;
+}
+.middle-section form {
+  display: flex;
+  width: 628px;
+  height: 40px;
+}
+.middle-section form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d3d3d3;
+  border-right: none;
+  border-radius: 2px 0 0 2px;
+  outline: none;
+  font-size: 1.6rem;
+}
+.middle-section form button {
+  width: 64px;
+  border: 1px solid #d3d3d3;
+  border-radius: 0 2px 2px 0;
+  padding-top: 4px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+.middle-section form button:hover {
+  background-color: #f0f0f0;
+}
+.middle-section form + i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.right-section a {
+  padding-right: 10px;
+  color: #000;
+}
+/* end header */
